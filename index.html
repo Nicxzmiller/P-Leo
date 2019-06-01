@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>NM | PortFolio</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
 <body>
     <div class="wrapper">
         <!--navbar starts here-->
@@ -15,28 +16,28 @@
             </span>
 
             <ul id="menu">
-                <li><a href="index.html">Home<span></span></a></li>
-                <li><a href="work.html">Projects<span></span></a></li>
-                <li><a href="about.html">About me<span></span></a></li>
-                <li><a href="learn.html">Learn to code<span></span></a></li>
-                <li><a href="contact">Contact<span></span></a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i>  Home<span></span></a></li>
+                <li><a href="work.html"><i class="fas fa-project-diagram"></i>  Projects<span></span></a></li>
+                <li><a href="about.html"><i class="fas fa-address-card"></i>  About me<span></span></a></li>
+                <li><a href="learn.html"><i class="fab fa-leanpub"></i>  Learn to code<span></span></a></li>
+                <li><a href="contact"><i class="fas fa-address-book"></i>  Contact<span></span></a></li>
             </ul>
             <div id="toggle">
-                <div class="span">menu</div>
+                <div class="span" style="color: #fff;"><i class="fas fa-bars"></i></div>
             </div>
         </nav>
 
         <div id="resize">
             <div class="close-btn">
-                Close
+                <i class="far fa-times-circle"></i>
             </div>
 
             <ul id="menu">
-                <li><a href="index.html">Home<span></span></a></li>
-                <li><a href="work.html">Projects<span></span></a></li>
-                <li><a href="about.html">About me<span></span></a></li>
-                <li><a href="learn.html">Learn to code<span></span></a></li>
-                <li><a href="contact">Contact<span></span></a></li>
+                <li><a href="index.html" class="home"><i class="fas fa-home"></i><span></span></a></li>
+                <li><a href="work.html" class="projects"><i class="fas fa-project-diagram"></i><span></span></a></li>
+                <li><a href="about.html" class="about"><i class="fas fa-address-card"></i><span></span></a></li>
+                <li><a href="learn.html" class="learn"><i class="fab fa-leanpub"></i><span></span></a></li>
+                <li><a href="contact" class="contact"><i class="fas fa-address-book"></i><span></span></a></li>
             </ul>
         </div>
         <!--navbar ends here -->
@@ -45,7 +46,7 @@
         <!--Hero section starts here-->
             <div class="hero">
                 <div class="header">
-                    <h1 class="line anim-typewriter"> I MAKE DESIGN MATTER.....</h1>
+                    <h1 class="line anim-typewriter"> I MAKE DESIGN MATTER.</h1>
                 </div>
             </div>
 
@@ -163,7 +164,34 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript"></script>
+    <script type="text/javascript">
+// navigation starts here
+    $("#toggle").click(function () {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+    $("#resize ul li a").click(function () {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+    $(".close-btn").click(function () {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+// navigation ends here
+
+//nav animation starts here
+
+//nav animation ends here
+        
+        
 
 
+        new WOW().init();
+
+    </script>
 </body>
 </html>
