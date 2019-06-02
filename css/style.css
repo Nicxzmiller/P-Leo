@@ -44,7 +44,7 @@ html, body{
         width: 0;
     }
     to {
-        width: 9em;
+        width: 15.50em;
     }
 }
 
@@ -54,7 +54,7 @@ html, body{
             width:0;
         }
         to{
-            width:8.54em;
+            width:14.30em;
         }
     }
 }
@@ -162,7 +162,7 @@ nav #menu li a{
 
 #resize{
     z-index: 1;
-    top: 0px;
+    top: 0;
     position: fixed;
     background: #0f0f0f;
     width: 100%;
@@ -273,7 +273,7 @@ nav #menu li a{
     font-size: 20px;
     z-index: 0;
     text-decoration: none;
-    text-shadow: 0;
+    text-shadow: none;
     width: 13px;
     height: 13px;
     border-bottom: 2px solid #fff;
@@ -426,9 +426,55 @@ h6{
 }
 
 
-
 /*footer section*/
+.collab{
+    text-align: right;
+}
 
+.collab p{
+    font-weight: lighter !important;
+    margin-bottom: 20px;
+}
+
+.hr{
+    background: rgba(255, 255, 255, 0.2);
+    height: 1px;
+}
+
+.info h4{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.info p {
+    color: grey;
+    font-weight: lighter;
+}
+
+.info li{
+    font-weight: lighter;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+#media, #address{
+    text-align: right;
+}
+
+#media ul li {
+    display:inline-block;
+}
+
+@media(max-width: 768px) {
+    .collab, #personal, #media, #address{
+        text-align: center;
+    }
+
+    .info ul{
+        margin:0 0 0 -22px;
+        padding: 0;
+    }
+}
 
 /*contact form*/
 
