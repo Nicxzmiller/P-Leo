@@ -475,8 +475,106 @@ h6{
         padding: 0;
     }
 }
+            
+/*---------work---------------*/
+
+.fa-project-diagram:hover{
+    color: #D02C86;
+    cursor: pointer;
+}
+
+.hero-content{
+    margin-left: 0;
+}
+
+.hero-content p {
+    font-weight: 300;
+    line-height: 35px;
+    color: grey;
+}
+
+.hero-content h6{
+    text-align: left;
+}
+
+@media(max-width: 768px){
+    .hero-content{
+        padding-top: 50px;
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
+/*about*/
+
+.about{
+    height: 500px;
+    margin-top: 120px;
+}
+
+.image {
+    background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
+}
 
 /*contact form*/
 
+#contact-form{
+    margin: 5% 1.4%;
+}
 
+#contact-form ul{
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#contact-form li{
+    padding: 10px;
+}
+
+#contact-form li:last-of-type{
+    border-bottom: none;
+}
+
+#contact-form label{
+    display: block;
+    font-size: 0.8em;
+    color: #999;
+    padding-left: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+textarea:focus{
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.textarea{
+    border-bottom: 1px solid #fdfdfd;
+}
+
+.send{
+    margin-left: 50px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: transparent;
+    color: #fdfdfd;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
 /*about section*/
